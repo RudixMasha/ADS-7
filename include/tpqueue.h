@@ -2,6 +2,8 @@
 #ifndef INCLUDE_TPQUEUE_H_
 #define INCLUDE_TPQUEUE_H_
 
+#include <string>
+
 template<typename T>
 class TPQueue {
  private:
@@ -10,8 +12,8 @@ class TPQueue {
         QItem* next;
     };
     QItem* head;
-
-public:
+ 
+ public:
   TPQueue() : head(nullptr) {}
   bool isEmpty() const {
     return head == nullptr;
