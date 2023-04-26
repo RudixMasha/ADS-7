@@ -29,7 +29,7 @@ public:
          head = temp;
         } else {
          QItem* cur = head;
-         while (cur->next != nullptr && value.prior = cur->next->x.prior)
+         while (cur->next != nullptr && value.prior <= cur->next->x.prior)
            cur = cur->next;
          QItem* temp = new QItem;
          temp->x = value;
@@ -39,7 +39,7 @@ public:
     }
     T pop() {
         if (isEmpty()) {
-            throw std::string("Empty!")
+            throw std::string("Empty!");
         } else {
             QItem* temp = head->next;
             T value = head->x;
