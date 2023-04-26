@@ -12,7 +12,7 @@ class TPQueue {
         QItem* next;
     };
     QItem* head;
- 
+
  public:
   TPQueue() : head(nullptr) {}
   bool isEmpty() const {
